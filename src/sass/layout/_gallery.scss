@@ -1,7 +1,3 @@
-.container {
-  margin: 0 auto;
-}
-
 .link {
   text-decoration: none;
 }
@@ -34,10 +30,6 @@
 }
 
 @media screen and (max-width: 479px) {
-  .container {
-    max-width: 479px;
-  }
-
   .list-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -54,10 +46,6 @@
 }
 
 @media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
@@ -81,9 +69,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
@@ -107,10 +92,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .gallery-list {
     row-gap: 32px;
     column-gap: 16px;
