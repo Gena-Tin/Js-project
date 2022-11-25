@@ -1,0 +1,82 @@
+.headerlib {
+    max-width: 320px;
+    max-height: 230px;
+
+    @media screen and(min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and(min-width: 1280px) {
+        max-width: 1280px;
+    }
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 40px 20px;
+    height: 216px;
+    color: white;
+    background-color: #2a2a2a;
+    background-image: url("../images/mobile/Rectangle\ 12@-min.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+        background-image:
+            url("../images/tablet/Rectangle\ 12@-min.png");
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 40px;
+        background-image:
+            url("../images/desctop/Rectangle\ 12@-min.png");
+    }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__container {
+    display: flex;
+    margin-bottom: 41px;
+    align-items: center;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo__svg {
+    width: 20px;
+    height: 20px;
+
+
+
+    /* align-self: center; */
+}
+
+.logo__text {
+    font-size: 30px;
+    line-height: 1.16;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
