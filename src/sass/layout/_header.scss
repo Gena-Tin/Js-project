@@ -5,7 +5,7 @@
         max-width: 768px;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         max-width: 1280px;
     }
 
@@ -21,13 +21,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding: 45px 60px 20px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+       
         background-image:
             url("../images/tablet/abstract-background-with-red-lines\ 12@-min.png");
+            
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         padding-top: 40px;
         background-image:
             url("../images/desctop/abstract-background-with-red-lines\ 12@-min.png");
@@ -110,16 +111,28 @@ ul {
     margin-left: 39px;
 }
 
+
+
 .search {
     display: flex;
     position: relative;
-    width: 394px;
+   
     margin: 0 auto 22px;
     justify-content: center;
+    width: 280px;
+    @media screen and (min-width: 1280px) {
+            width: 400px;
+        }
 }
 
 .search__input {
-    width: 394px;
+    width: 280px;
+@media  screen and (min-width: 768px) {
+    width: 340px;
+}
+@media screen and (min-width: 1280px) {
+    width: 400px;
+}
     height: 20px;
     padding: 4px 0;
     border-top: none;
