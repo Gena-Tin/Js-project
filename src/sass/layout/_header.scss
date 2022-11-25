@@ -1,0 +1,185 @@
+.header {
+    max-width: 320px;
+
+    @media screen and(min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        max-width: 1280px;
+    }
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 40px 20px;
+    height: 216px;
+    color: white;
+    background-color: #2a2a2a;
+    background-image: url("../images/mobile/Group\ 862@-min.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 45px 60px 20px;
+        background-image:
+            url("../images/tablet/abstract-background-with-red-lines\ 12@-min.png");
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 40px;
+        background-image:
+            url("../images/desctop/abstract-background-with-red-lines\ 12@-min.png");
+    }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__container {
+    display: flex;
+    margin-bottom: 41px;
+    align-items: center;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo__svg {
+    width: 20px;
+    height: 20px;
+
+
+
+    /* align-self: center; */
+}
+
+.logo__text {
+    font-size: 30px;
+    line-height: 1.16;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.menu__link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    width: 34px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #d81427;
+}
+
+.menu__link-library {
+    margin-left: 39px;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    width: 394px;
+    margin: 0 auto 22px;
+    justify-content: center;
+}
+
+.search__input {
+    width: 394px;
+    height: 20px;
+    padding: 4px 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.5px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.search__button {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search__button-icon {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    stroke: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.rotate-vert-center {
+    -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    0% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate-vert-center {
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    0% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
