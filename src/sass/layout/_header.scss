@@ -96,7 +96,7 @@ ul {
 }
 
 
-.menu__link.current::after {
+.current::after {
     content: '';
     position: absolute;
     left: 0;
@@ -107,6 +107,16 @@ ul {
     background-color: #d81427;
 }
 
+.current1::after {
+    content: '';
+    position: absolute;
+    left: 38;
+    bottom: -20%;
+    width: 72px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #d81427;
+}
 .menu__link-library {
     margin-left: 39px;
 }
