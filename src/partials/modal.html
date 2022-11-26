@@ -1,25 +1,47 @@
 <div class="modal">
+  <div class="modal__backdrop"></div>
   <div class="modal-content">
-    <span>x</span>
+    <button type="button" class="modal-content__btn-close">
+      <span>x</span>
+    </button>
+
     <div class="modal-content__sides">
       <div class="modal-content__img">
         <img src="#" alt="image" />
       </div>
       <div class="modal-content__right-side">
         <h2 class="modal-content__title">A FISTFUL OF LEAD</h2>
-        <div class="modal-content__items">
-          <p class="modal-content__item">Vote / Votes</p>
-          <p class="modal-content__item">Popularity</p>
-          <p class="modal-content__item">Original Title</p>
-          <p class="modal-content__item">Genre</p>
-        </div>
+        <ul class="modal-content__items">
+          <li class="modal-content__item">
+            <p class="film-details">Vote / Votes</p>
+            <p class="film-details__info--number">
+              <sp class="film-details__rating--orange"></sp>
+              <sp class="film-details__rating"> / </sp>
+              <sp></sp>
+            </p>
+          </li>
+          <li class="modal-content__item">
+            <p class="film-details">Popularity</p>
+            <p class="film-details__info--number"></p>
+          </li>
+          <li class="modal-content__item">
+            <p class="film-details">Original Title</p>
+            <p class="film-details__info"></p>
+          </li>
+          <li class="modal-content__item">
+            <p class="film-details">Genre</p>
+            <p class="film-details__info"></p>
+          </li>
+        </ul>
         <h3 class="modal-content__about">About</h3>
         <p class="modal-content__description"></p>
         <div class="modal-content__buttons">
-          <button type="button" class="modal-content__btn">
+          <button type="button" class="modal-content__btn btn-watch">
             ADD TO WATCHED
           </button>
-          <button type="button" class="modal-content__btn">ADD TO QUEUE</button>
+          <button type="button" class="modal-content__btn btn-queue">
+            ADD TO QUEUE
+          </button>
         </div>
       </div>
     </div>
