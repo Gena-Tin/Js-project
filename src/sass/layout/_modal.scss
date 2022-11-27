@@ -16,6 +16,10 @@
   display: flex;
   pointer-events: initial;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 .modal__backdrop {
   position: absolute;
   top: 0;
